@@ -15,7 +15,7 @@ var biggestProfit = function() {
         if(stockPrices[i] < lowprice ) {
             lowprice = stockPrices[i];
         }
-            for(var j=0;j<stockPrices.length;j++){
+            for(var j=i+1;j<stockPrices.length;j++){
                 if(stockPrices[j] > highprice ) {
                     highprice = stockPrices[j];
                 }
